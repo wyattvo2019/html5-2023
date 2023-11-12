@@ -15,16 +15,22 @@
   <h1>Galery</h1>
   <hr>
   <div class="thumbnails">
-    <img src="./images/small/pexels-gizem-çelebi-19065473.jpg" alt="">
-    <img src="./images/small/pexels-laura-meinhardt-7372338.jpg" alt="">
-    <img src="./images/small/pexels-naro-k-18900657.jpg" alt="">
-    <img src="./images/small/pexels-natacha-panassol-14264355.jpg" alt="">
-    <img src="./images/small/pexels-nati-18898429.jpg" alt="">
-    <img src="./images/small/pexels-veranika-verkhovina-19050728.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-gizem-çelebi-19065473.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-laura-meinhardt-7372338.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-naro-k-18900657.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-natacha-panassol-14264355.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-nati-18898429.jpg" alt="">
+    <img onclick="show(this)" src="./images/small/pexels-veranika-verkhovina-19050728.jpg" alt="">
   </div>
   <div class="navigation">
     <div class="previous" onclick="move(-200)">&lt;&lt;</div>
     <div class="next" onclick="move(200)">&gt;&gt;</div>
+  </div>
+  <div id="showBoard">
+    <div id="maskContainer" onclick="hide()"></div>
+    <div id="showContainer">
+      <img src="./images/big/pexels-gizem-çelebi-19065473.jpeg" alt="" class="imageShow">
+    </div>
   </div>
 </body>
 </html>

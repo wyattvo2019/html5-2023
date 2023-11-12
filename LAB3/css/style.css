@@ -1,0 +1,20 @@
+.thumbnails {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.thumbnails>img {
+  display: inline-block;
+  height: 450px;
+  width: 250px;
+}
+.thumbnails::-webkit-scrollbar{
+  display: none;
+}
+.navigation{
+  text-align: center;
+}
+.previous, .next {
+  cursor: pointer;
+  display: inline-flex;
+}
